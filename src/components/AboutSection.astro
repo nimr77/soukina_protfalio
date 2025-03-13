@@ -1,0 +1,29 @@
+---
+import { homepage } from "../../public/data/data.json";
+const { aboutSection } = homepage;
+---
+
+<section class="py-8">
+  <div
+    class="container mx-auto flex items-center justify-center flex-col md:flex-row"
+  >
+    <img
+      src={aboutSection.imageUrl}
+      alt={aboutSection.title}
+      class="w-64 h-64 rounded-full mr-8 mb-4 md:mb-0"
+    />
+    <div>
+      <h2 class="text-2xl font-bold mb-2">{aboutSection.title}</h2>
+      <p class="text-gray-700 mb-4">
+        {aboutSection.description}
+      </p>
+      <ul class="list-disc list-inside text-gray-600">
+        {
+          aboutSection.qualifications.map((qualification, index) => (
+            <li id={index.toString()}>{qualification}</li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

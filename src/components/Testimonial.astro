@@ -1,0 +1,28 @@
+---
+interface Props {
+  testimonial: {
+    content: string;
+    name: string;
+    job: string;
+    imageUrl: string;
+  };
+  id: string;
+}
+
+const { testimonial, id } = Astro.props;
+---
+
+<div id={id} class="bg-white rounded-lg shadow-md p-4">
+  <p class="text-gray-700 italic mb-2">{testimonial.content}</p>
+  <div class="flex items-center">
+    <img
+      src={testimonial.imageUrl}
+      alt={testimonial.name}
+      class="w-12 h-12 rounded-full mr-4"
+    />
+    <div>
+      <h4 class="text-lg font-semibold">{testimonial.name}</h4>
+      <p class="text-gray-500">{testimonial.job}</p>
+    </div>
+  </div>
+</div>
