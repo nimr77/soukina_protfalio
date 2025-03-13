@@ -1,0 +1,218 @@
+{
+  "siteMetadata": {
+    "title": "Soukaina Mehdi - Digital Marketing Consultant",
+    "description": "Data-driven digital marketing strategies for business growth. Expert consulting in Morocco & Turkey.  Schedule a free consultation!",
+    "keywords": "digital marketing, marketing consultant, business growth, seo, social media, email marketing, Morocco, Turkey",
+    "author": "Soukaina Mehdi",
+    "canonicalUrl": "https://soukainamehdi.co/"
+  },
+  "header": {
+    "logo": {
+      "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2024/03/logo-1.svg",
+      "altText": "Soukaina Mehdi - Digital Marketing Consultant",
+      "link": "/"
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Sample Page",
+        "link": "/sample-page/"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "http://sukenamediinstg"
+      },
+      {
+        "platform": "linkedin",
+        "url": "http://soukainamehdi"
+      }
+    ]
+  },
+  "homepage": {
+    "heroSection": {
+      "title": "Data-Driven Digital Marketing for Sustainable Business Growth",
+      "description": "Unlock your business's full potential with my expert marketing strategies. I combine data analysis and creative solutions to drive results. Let's talk business!",
+      "button": {
+        "label": "Get a Free Consultation",
+        "link": "/contact"
+      }
+    },
+    "aboutSection": {
+      "title": "About Soukaina Mehdi",
+      "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2024/03/soukainamehdi_115new-scaled.jpg",
+      "description": "Experienced IT professional turned marketing expert. I'm passionate about using data to solve business challenges and fuel growth for clients in Morocco and Turkey.",
+      "qualifications": [
+        "Fluent in French, English, Arabic",
+        "Experience in Morocco and Turkey markets",
+        "Strong background in Information Technology",
+        "Expertise in marketing strategy, data analysis, and team leadership."
+      ],
+      "keywords": "marketing consultant, Morocco, Turkey, IT, data analysis"
+    },
+    "approachSection": {
+      "title": "My Data-First Approach",
+      "description": "I believe in data-driven decisions for sustainable growth. From funnel optimization to brand awareness, I craft personalized strategies that address your unique needs.",
+      "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy"
+    },
+    "servicesSection": {
+      "title": "Services",
+      "description": "I provide a comprehensive range of digital marketing services to elevate your brand and drive growth. Learn more about how I can help your business thrive:",
+      "services": [
+        {
+          "id": "strategy",
+          "title": "Marketing Strategy Development",
+          "description": "Crafting data-backed strategies to achieve your business goals and reach your target audience.",
+          "icon": "chess",
+          "keywords": "marketing plan, strategy, target audience"
+        },
+        {
+          "id": "growth",
+          "title": "Growth Marketing",
+          "description": "Implementing data-driven strategies to boost growth and maximize your return on investment (ROI).",
+          "icon": "chart-line",
+          "keywords": "growth hacking, roi, data-driven marketing"
+        },
+        {
+          "id": "email",
+          "title": "Email Marketing",
+          "description": "Personalized campaigns to engage your audience and nurture leads with email marketing.",
+          "icon": "mail-bulk",
+          "keywords": "email campaigns, lead nurturing, personalized email"
+        },
+        {
+          "id": "advertising",
+          "title": "Online Advertising",
+          "description": "Targeted campaigns across diverse platforms to connect with your ideal customers.",
+          "icon": "adversal",
+          "keywords": "paid advertising, ppc, google ads, social media ads"
+        },
+        {
+          "id": "consulting",
+          "title": "Marketing Consulting & Advisory",
+          "description": "Expert guidance to overcome challenges and unlock new opportunities.",
+          "icon": "chart-bar",
+          "keywords": "consulting, marketing advice, strategy"
+        },
+        {
+          "id": "seo",
+          "title": "Search Engine Optimization (SEO)",
+          "description": "Content and website optimization to improve your search ranking and drive organic traffic.",
+          "icon": "search",
+          "keywords": "seo, organic traffic, keyword research"
+        },
+        {
+          "id": "research",
+          "title": "Market Research and Analysis",
+          "description": "Understanding customer behavior and industry trends to inform your marketing decisions.",
+          "icon": "map-marked-alt",
+          "keywords": "market analysis, competitive analysis, target market"
+        },
+        {
+          "id": "performance",
+          "title": "Performance Measurement",
+          "description": "Tracking and analyzing marketing data to optimize ROI and make data-driven decisions.",
+          "icon": "sort-numeric-up-alt",
+          "keywords": "marketing analytics, key performance indicators, data"
+        },
+        {
+          "id": "training",
+          "title": "Training and Workshops",
+          "description": "Customized workshops to educate your team on best practices and industry trends.",
+          "icon": "chalkboard-teacher",
+          "keywords": "marketing training, workshops, team education"
+        },
+        {
+          "id": "leadgen",
+          "title": "Lead Generation & Conversion Optimization",
+          "description": "Targeted tactics and CRO techniques to attract and convert leads into customers.",
+          "icon": "magnet",
+          "keywords": "lead generation, conversion rate optimization, cro"
+        },
+        {
+          "id": "social",
+          "title": "Social Media Marketing",
+          "description": "Engaging strategies to build brand awareness and drive traffic on social platforms.",
+          "icon": "users",
+          "keywords": "social media, brand awareness, engagement"
+        },
+        {
+          "id": "mobile",
+          "title": "Mobile App Marketing",
+          "description": "Effective app promotion through ASO, mobile advertising, and install campaigns.",
+          "icon": "mobile-alt",
+          "keywords": "mobile app marketing, aso, app installs"
+        }
+      ]
+    },
+    "roiSection": {
+      "title": "Ready to Boost Your ROI?",
+      "button": {
+        "label": "Schedule a Consultation",
+        "link": "/contact"
+      }
+    },
+    "statsSection": {
+      "title": "Numbers Speak Louder Than Words",
+      "stats": [
+        { "label": "Lines of Code", "value": "979K+" },
+        { "label": "Cups of Coffee", "value": "280K+" },
+        { "label": "Solved Tickets", "value": "135K+" },
+        { "label": "Active Installs", "value": "250K+" }
+      ]
+    },
+    "testimonialsSection": {
+      "title": "What Clients Say",
+      "description": "Read what happy clients have to say about my digital marketing services:",
+      "testimonials": [
+        {
+          "content": "You’ve read about the impoce of the being courageous, rebelliousi and it’s imaginative. These are all vital for ingredients in an effective advertising they must.",
+          "name": "Patricia Muller",
+          "job": "WordPress Developer",
+          "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2020/08/avatar1.png"
+        },
+        {
+          "content": "You’ve read about the impoce of the being courageous, rebelliousi and it’s imaginative. These are all vital for ingredients in an effective advertising they must.",
+          "name": "Michael Clark",
+          "job": "Engineer",
+          "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2020/08/avatar2.png"
+        },
+        {
+          "content": "You’ve read about the impoce of the being courageous, rebelliousi and it’s imaginative. These are all vital for ingredients in an effective advertising they must.",
+          "name": "Kent Milestone",
+          "job": "Graphic Designer",
+          "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2020/08/avatar3.png"
+        }
+      ]
+    },
+    "callToActionSection": {
+      "description": "Take your marketing to the next level! Contact me today.",
+      "button": {
+        "label": "Contact Me",
+        "link": "/contact"
+      }
+    },
+    "newsletterSection": {
+      "title": "Subscribe",
+      "description": "Stay up-to-date with digital marketing insights and trends.",
+      "formHtml": "<div class=\"tnp tnp-subscription \">\n<form method=\"post\" action=\"https://soukainamehdi.co/?na=s\" data-dashlane-rid=\"e63b63157b1c3a49\" data-dashlane-classification=\"newsletter\">\n\n<input type=\"hidden\" name=\"nlang\" value=\"\"><div class=\"tnp-field tnp-field-email\"><label for=\"tnp-1\">Email</label>\n<div class=\"mega-pm-container mega-pm-icon-container mega-shadow-dom\" data-input-link=\"d7af645d-5472-42cf-8b8c-ae460bb586d8\"></div><input class=\"tnp-email\" type=\"email\" name=\"ne\" id=\"tnp-1\" value=\"\" placeholder=\"\" required=\"\" data-dashlane-rid=\"44c44f7252e057c1\" data-dashlane-classification=\"email\" data-kwimpalastatus=\"alive\" data-kwimpalaid=\"1741904924494-0\" autocomplete=\"off\" data-input-link=\"d7af645d-5472-42cf-8b8c-ae460bb586d8\" mega-pwm-event=\"true\"></div>\n<div class=\"tnp-field tnp-field-button\"><input class=\"tnp-submit\" type=\"submit\" value=\"Subscribe\" data-dashlane-rid=\"2efbb92cb4dee29d\" data-dashlane-classification=\"action,subscribe\">\n</div>\n</form>\n</div>"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 - Soukaina Mehdi",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "http://sukenamediinstg"
+      },
+      {
+        "platform": "linkedin",
+        "url": "http://soukainamehdi"
+      }
+    ]
+  }
+}
