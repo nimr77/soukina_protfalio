@@ -5,37 +5,41 @@ import "../styles/global.css";
 const { logo, navigation, socialLinks } = header;
 ---
 
-<header class="bg-white shadow-md py-4">
-  <div class="container mx-auto flex items-center justify-between">
-    <a href={logo.link} class="flex items-center">
-      <img src={logo.imageUrl} alt={logo.altText} class="h-8 mr-2" />
-      <span class="font-bold text-xl">{logo.altText}</span>
-    </a>
-    <nav>
-      <ul class="flex space-x-4">
+<body>
+  <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href={logo.link} class="flex items-center">
+        <img src={logo.imageUrl} alt={logo.altText} class="h-8 mr-2" />
+        <span class="font-bold text-xl">{logo.altText}</span>
+      </a>
+      <nav>
+        <ul class="flex space-x-4">
+          {
+            navigation.map((item) => (
+              <li id={item.label} class="hover:text-blue-500">
+                <a href={item.link} class="hover:text-blue-500">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+      <div class="flex space-x-2">
         {
-          navigation.map((item) => (
-            <li id={item.label} class="hover:text-blue-500">
-              <a href={item.link} class="hover:text-blue-500">
-                {item.label}
-              </a>
-            </li>
+          socialLinks.map((link) => (
+            <a
+              href={link.url}
+              aria-label={link.platform}
+              class="text-gray-500 hover:text-gray-700"
+            >
+              {link.platform}
+            </a>
           ))
         }
-      </ul>
-    </nav>
-    <div class="flex space-x-2">
-      {
-        socialLinks.map((link) => (
-          <a
-            href={link.url}
-            aria-label={link.platform}
-            class="text-gray-500 hover:text-gray-700"
-          >
-            {link.platform}
-          </a>
-        ))
-      }
+      </div>
     </div>
-  </div>
-</header>
+  </header>
+
+  <slot />
+</body>
