@@ -1,0 +1,18 @@
+---
+import { homepage } from "../../../public/data/data.json";
+import MyJourney from "./about_section_data";
+const { aboutSection, myJourneySection } = homepage;
+---
+
+<section class="py-8 bg-white h-screen">
+  <div
+    class="container mx-auto flex items-center justify-center flex-col md:flex-row"
+  >
+    <img
+      src={aboutSection.imageUrl}
+      alt={aboutSection.title}
+      class="w-xl rounded-xl mr-8 mb-4 md:mb-0"
+    />
+    <MyJourney client:load myJourneySection={myJourneySection} />
+  </div>
+</section>

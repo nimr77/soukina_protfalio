@@ -33,6 +33,40 @@
       }
     ]
   },
+  "myJourneySection": {
+    "title": "My Journey",
+    "description": "I believe in the power of data to drive informed decision-making and fuel business growth. My approach is centered around understanding your unique challenges and goals, then leveraging my expertise to develop tailored strategies that address your specific needs. From optimizing your marketing funnel to refining your brand messaging, I’m here to guide you every step of the way.",
+    "qualifications": {
+      "column1": [
+        {
+          "text": "French & English Fluent Arabic, Native",
+          "icon": "fas fa-check-circle"
+        },
+        {
+          "text": "My Business operates in Morocco and Turkey",
+          "icon": "fas fa-check-circle"
+        },
+        {
+          "text": "Information Technology Background",
+          "icon": "fas fa-check-circle"
+        }
+      ],
+      "column2": [
+        {
+          "text": "Management and Team Leadership",
+          "icon": "fas fa-check-circle"
+        },
+        {
+          "text": "Digital Marketing Expertise",
+          "icon": "fas fa-check-circle"
+        },
+        {
+          "text": "Performance Tracking, Analysis and Reporting",
+          "icon": "fas fa-check-circle"
+        }
+      ]
+    }
+  },
   "homepage": {
     "heroSection": {
       "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2024/03/soukainamehdi.co-Black.png",
@@ -60,6 +94,7 @@
       "description": "I believe in data-driven decisions for sustainable growth. From funnel optimization to brand awareness, I craft personalized strategies that address your unique needs.",
       "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy"
     },
+
     "servicesSection": {
       "title": "Services",
       "description": "I provide a comprehensive range of digital marketing services to elevate your brand and drive growth. Learn more about how I can help your business thrive:",
