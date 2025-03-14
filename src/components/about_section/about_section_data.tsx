@@ -24,18 +24,19 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.4,
+      duration: 1.2,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.8,
       ease: "easeOut",
     },
   },
@@ -48,12 +49,18 @@ const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
         <motion.h2
           className="text-6xl font-bold  mb-8 text-[#121315]"
           variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
         >
           {myJourneySection.title}
         </motion.h2>
         <motion.p
           className="text-gray-700  mb-12 leading-relaxed text-lg"
           variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
         >
           {myJourneySection.description}
         </motion.p>
@@ -62,15 +69,16 @@ const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
             className="space-y-4"
             variants={containerVariants}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
           >
             {myJourneySection.qualifications.column1.map((qualification, index) => (
               <motion.div
                 key={index}
-                className="flex items-center text-lg" // Increased font size
+                className="flex items-center text-lg"
                 variants={itemVariants}
               >
-                <i className="fas fa-check-circle text-primary mr-2" style={{ color: "#DC3544" }} /> {/* Red Checkmark */}
+                <i className="fas fa-check-circle text-primary mr-2" style={{ color: "#DC3544" }} />
                 <span className="text-gray-800">{qualification.text}</span>
               </motion.div>
             ))}
@@ -79,16 +87,18 @@ const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
             className="space-y-4"
             variants={containerVariants}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
           >
             {myJourneySection.qualifications.column2.map((qualification, index) => (
               <motion.div
                 key={index}
-                className="flex items-center text-lg" // Increased font size
+                className="flex items-center text-lg"
                 variants={itemVariants}
               >
-        <i className="fas fa-check-circle text-primary mr-2" style={{ color: "#DC3544" }} /> {/* Red Checkmark */}
-                <span className="text-gray-800">{qualification.text}</span>              </motion.div>
+                <i className="fas fa-check-circle text-primary mr-2" style={{ color: "#DC3544" }} />
+                <span className="text-gray-800">{qualification.text}</span>
+              </motion.div>
             ))}
           </motion.div>
         </div>
