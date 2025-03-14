@@ -79,7 +79,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
         </motion.p>
         <motion.a
           href={heroSection.button.link}
-          className="inline-block bg-primary bg-red-700 text-white font-bold py-3 px-8 rounded-md shadow-lg transition duration-300"
+          className="inline-block bg-primary bg-red-700 text-white font-bold py-3 px-8 rounded-md shadow-lg "
           variants={buttonVariants}
         >
           {heroSection.button.label || "Schedule a Free Call Today!"}
