@@ -7,15 +7,15 @@ const { logo, navigation, socialLinks } = header;
 <header class="bg-white shadow-md py-4">
   <div class="container mx-auto flex items-center justify-between">
     <a href={logo.link} class="flex items-center">
-      <img src={logo.imageUrl} alt={logo.altText} class="h-8 mr-2" />
-      <span class="font-bold text-xl">{logo.altText}</span>
+      <img src={logo.imageUrl} alt={logo.altText} class="h-10 mr-2" />
+      <span class="font-bold text-xl text-gray-700">{logo.altText}</span>
     </a>
     <nav>
-      <ul class="flex space-x-4">
+      <ul class="flex space-x-6 uppercase font-semibold text-sm">
         {
           navigation.map((item) => (
             <li id={item.label}>
-              <a href={item.link} class="hover:text-blue-500">
+              <a href={item.link} class="hover:text-primary">
                 {item.label}
               </a>
             </li>
@@ -29,7 +29,7 @@ const { logo, navigation, socialLinks } = header;
           <a
             href={link.url}
             aria-label={link.platform}
-            class="text-gray-500 hover:text-gray-700"
+            class="text-gray-500 hover:text-primary"
           >
             {link.platform}
           </a>

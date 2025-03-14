@@ -2,17 +2,21 @@
 import AboutSection from "../components/AboutSection.astro";
 import ApproachSection from "../components/ApproachSection.astro";
 import CallToActionSection from "../components/CallToActionSection.astro";
-import HeroSection from "../components/HeroSection.astro";
+import HeroSection from "../components/hero_section/HeroSection";
 import NewsletterSection from "../components/NewsletterSection.astro";
 import ROISection from "../components/ROISection.astro";
 import ServicesSection from "../components/ServicesSection.astro";
 import StatsSection from "../components/StatsSection.astro";
 import TestimonialsSection from "../components/TestimonialsSection.astro";
 import Layout from "../layouts/Layout.astro";
+
+import { homepage } from "../../public/data/data.json";
+
+const { heroSection } = homepage;
 ---
 
 <Layout>
-  <HeroSection />
+  <HeroSection client:load heroSection={heroSection} />
   <AboutSection />
   <ApproachSection />
   <ServicesSection />
