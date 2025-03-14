@@ -43,16 +43,16 @@ const itemVariants = {
 
 const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-3xl font-bold text-center mb-8 text-[#121315]"
+          className="text-6xl font-bold  mb-8 text-[#121315]"
           variants={itemVariants}
         >
           {myJourneySection.title}
         </motion.h2>
         <motion.p
-          className="text-gray-700 text-center mb-12 leading-relaxed"
+          className="text-gray-700  mb-12 leading-relaxed text-lg"
           variants={itemVariants}
         >
           {myJourneySection.description}
@@ -67,10 +67,10 @@ const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
             {myJourneySection.qualifications.column1.map((qualification, index) => (
               <motion.div
                 key={index}
-                className="flex items-center"
+                className="flex items-center text-lg" // Increased font size
                 variants={itemVariants}
               >
-                <i className={`${qualification.icon} text-primary mr-2`} style={{ color: "#DC3544" }} />
+                <i className="fas fa-check-circle text-primary mr-2" style={{ color: "#DC3544" }} /> {/* Red Checkmark */}
                 <span className="text-gray-800">{qualification.text}</span>
               </motion.div>
             ))}
@@ -84,12 +84,11 @@ const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
             {myJourneySection.qualifications.column2.map((qualification, index) => (
               <motion.div
                 key={index}
-                className="flex items-center"
+                className="flex items-center text-lg" // Increased font size
                 variants={itemVariants}
               >
-                <i className={`${qualification.icon} text-primary mr-2`} style={{ color: "#DC3544" }} />
-                <span className="text-gray-800">{qualification.text}</span>
-              </motion.div>
+        <i className="fas fa-check-circle text-primary mr-2" style={{ color: "#DC3544" }} /> {/* Red Checkmark */}
+                <span className="text-gray-800">{qualification.text}</span>              </motion.div>
             ))}
           </motion.div>
         </div>
