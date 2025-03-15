@@ -1,45 +1,62 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import ServiceCard from "./service";
 
-interface Props {
-  service: {
-    id: string;
-    title: string;
-    description: string;
-    icon: string;
-    keywords: string;
-  };
+interface Service {
   id: string;
+  title: string;
+  description: string;
+  icon: string;
+  keywords: string;
 }
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
+interface Props {
+  services: Service[];
+}
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // Stagger the animation of each service card
+      delayChildren: 0.3, // Delay before the children animations start
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.7,
-      ease: "easeInOut"
-    }
-  }
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
 };
 
-const ServiceCard: React.FC<Props> = ({ service, id }) => {
+const Services: React.FC<Props> = ({ services }) => {
   return (
     <motion.div
-      id={id}
-      className="bg-white rounded-xl shadow-md p-8 hover:shadow-2xl transition-all duration-300"
-      variants={cardVariants}
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }} // Only animate once when in viewport
+      viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="flex items-center mb-4">
-        <i className="fa-solid fa-rocket text-3xl mr-3" style={{ color: '#DC3544' }}></i>
-        <h3 className="text-3xl  font-bold text-gray-800">{service.title}</h3>
-      </div>
-      <p className="text-gray-700 text-lg leading-relaxed">{service.description}</p>    </motion.div>
+      {services.map((service, index) => (
+        <motion.div
+          key={service.id}
+          variants={itemVariants}
+        //   className="overflow-hidden" // Add overflow-hidden to the card container
+        >
+          <ServiceCard service={service} id={`service-${service.id}`} />
+        </motion.div>
+      ))}
+    </motion.div>
   );
 };
 
-export default ServiceCard;
+export default Services;
