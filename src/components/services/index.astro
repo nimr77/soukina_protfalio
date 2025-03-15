@@ -1,6 +1,6 @@
 ---
-import { homepage } from "../../public/data/data.json";
-import Service from "./Service.astro";
+import { homepage } from "../../../public/data/data.json";
+import ServiceCard from "./services";
 const { servicesSection } = homepage;
 ---
 
@@ -11,7 +11,7 @@ const { servicesSection } = homepage;
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {
         servicesSection.services.map((service) => (
-          <Service service={service} id={service.id} />
+          <ServiceCard service={service} id={service.id} client:load />
         ))
       }
     </div>
