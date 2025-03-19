@@ -193,26 +193,32 @@
       "companies": [
         {
           "image": "/images/companies/barnes-logo-circle.svg",
+          "name": "Barnes",
           "type": "svg"
         },
         {
           "image": "/images/companies/International Clinics.jpeg",
+          "name": "International Clinics",
           "type": "jpeg"
         },
         {
           "image": "/images/companies/Publicis Groupe Logo.png",
+          "name": "Publicis Groupe",
           "type": "png"
         },
         {
           "image": "/images/companies/SQLI Logo.jpeg",
+          "name": "SQLI",
           "type": "jpeg"
         },
         {
           "image": "/images/companies/the lifeco logo.png",
+          "name": "The Lifeco",
           "type": "png"
         },
         {
           "image": "/images/companies/TipTop Logo.png",
+          "name": "TipTop",
           "type": "png"
         }
       ]

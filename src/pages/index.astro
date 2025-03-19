@@ -2,6 +2,7 @@
 import AboutSection from "../components/about_section/index.astro";
 import HeroSection from "../components/hero_section/HeroSection";
 import ServicesSection from "../components/services/index.astro";
+import WorkedWith from "../components/workedWith/index.astro";
 import Layout from "../layouts/Layout.astro";
 
 import { homepage } from "../../public/data/data.json";
@@ -11,6 +12,7 @@ const { heroSection } = homepage;
 
 <Layout class="font-sans">
   <HeroSection client:load heroSection={heroSection} />
+  <WorkedWith />
   <AboutSection />
   <!-- <ApproachSection /> -->
   <ServicesSection />

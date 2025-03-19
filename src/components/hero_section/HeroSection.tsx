@@ -51,6 +51,14 @@ const buttonVariants = {
       ease: "easeOut", // Smooth easing effect
     },
   },
+  
+  hover: {
+    scale: 1.1,
+    transition: {
+      duration: 0.2,
+      ease: "easeInOut"
+    }
+  }
 };
 
 const HeroSection: React.FC<Props> = ({ heroSection }) => {

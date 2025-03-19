@@ -1,0 +1,50 @@
+---
+import { homepage } from "../../../public/data/data.json";
+
+const { workedWith } = homepage;
+---
+
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto">
+    <h2 class="text-5xl text-gray-700 font-bold text-center mb-4">
+      {workedWith.title}
+    </h2>
+    <p class="text-gray-700 text-lg text-center mb-8">
+      {workedWith.description}
+    </p>
+    <div
+      class="flex items-center justify-center overflow-x-auto scrollbar-hide"
+    >
+      <!-- Horizontal Scroll Container -->
+      <div class="flex space-x-8 py-6">
+        <!-- Company Items Container -->
+        {
+          workedWith.companies.map((company, index) => (
+            <div id={index.toString()} class="company-item">
+              <img
+                src={company.image}
+                alt={`Logo of ${company.name || "Company"}`}
+                class="h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110 rounded-lg"
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .company-item:hover img {
+    transform: scale(1.1);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
