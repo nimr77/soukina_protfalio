@@ -69,7 +69,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
     >
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <motion.div
-        className="container text-left relative z-10 px-8 md:px-80"
+        className="container text-left relative z-10 px-8 md:px-60 max-w-7xl"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
