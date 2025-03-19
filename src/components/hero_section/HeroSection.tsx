@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 interface HeroSection {
   title: string;
@@ -69,14 +70,14 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
           className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
           variants={textVariants}
         >
-          {heroSection.title}
+         🚀  {heroSection.title}
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-white mb-8 leading-relaxed"
           variants={textVariants}
         >
-          {heroSection.description}
-        </motion.p>
+          <ReactMarkdown>{heroSection.description}</ReactMarkdown>        
+          </motion.p>
         <motion.a
           href={heroSection.button.link}
           className="inline-block bg-primary bg-red-700 text-white font-bold py-3 px-8 rounded-md shadow-lg "
@@ -88,5 +89,4 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
     </section>
   );
 };
-
 export default HeroSection;
