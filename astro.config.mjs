@@ -8,7 +8,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://nimr77.github.io",
-  base: "soukina_protfalio",
+  base: "/soukina_protfalio/",
   vite: {
     plugins: [tailwindcss()],
   },
