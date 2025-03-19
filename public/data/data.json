@@ -186,57 +186,36 @@
         }
       ]
     },
-    "roiSection": {
-      "title": "Ready to Boost Your ROI?",
-      "button": {
-        "label": "Schedule a Consultation",
-        "link": "/contact"
-      }
-    },
-    "statsSection": {
-      "title": "Numbers Speak Louder Than Words",
-      "stats": [
-        { "label": "Lines of Code", "value": "979K+" },
-        { "label": "Cups of Coffee", "value": "280K+" },
-        { "label": "Solved Tickets", "value": "135K+" },
-        { "label": "Active Installs", "value": "250K+" }
-      ]
-    },
-    "testimonialsSection": {
-      "title": "What Clients Say",
-      "description": "Read what happy clients have to say about my digital marketing services:",
-      "testimonials": [
+
+    "workedWith": {
+      "title": "I've worked with",
+      "description": "Some of the companies I've worked with",
+      "companies": [
         {
-          "content": "You’ve read about the impoce of the being courageous, rebelliousi and it’s imaginative. These are all vital for ingredients in an effective advertising they must.",
-          "name": "Patricia Muller",
-          "job": "WordPress Developer",
-          "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2020/08/avatar1.png"
+          "image": "/images/companies/barnes-logo-circle.svg",
+          "type": "svg"
         },
         {
-          "content": "You’ve read about the impoce of the being courageous, rebelliousi and it’s imaginative. These are all vital for ingredients in an effective advertising they must.",
-          "name": "Michael Clark",
-          "job": "Engineer",
-          "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2020/08/avatar2.png"
+          "image": "/images/companies/International Clinics.jpeg",
+          "type": "jpeg"
         },
         {
-          "content": "You’ve read about the impoce of the being courageous, rebelliousi and it’s imaginative. These are all vital for ingredients in an effective advertising they must.",
-          "name": "Kent Milestone",
-          "job": "Graphic Designer",
-          "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2020/08/avatar3.png"
+          "image": "/images/companies/Publicis Groupe Logo.png",
+          "type": "png"
+        },
+        {
+          "image": "/images/companies/SQLI Logo.jpeg",
+          "type": "jpeg"
+        },
+        {
+          "image": "/images/companies/the lifeco logo.png",
+          "type": "png"
+        },
+        {
+          "image": "/images/companies/TipTop Logo.png",
+          "type": "png"
         }
       ]
-    },
-    "callToActionSection": {
-      "description": "Take your marketing to the next level! Contact me today.",
-      "button": {
-        "label": "Contact Me",
-        "link": "/contact"
-      }
-    },
-    "newsletterSection": {
-      "title": "Subscribe",
-      "description": "Stay up-to-date with digital marketing insights and trends.",
-      "formHtml": "<div class=\"tnp tnp-subscription \">\n<form method=\"post\" action=\"https://soukainamehdi.co/?na=s\" data-dashlane-rid=\"e63b63157b1c3a49\" data-dashlane-classification=\"newsletter\">\n\n<input type=\"hidden\" name=\"nlang\" value=\"\"><div class=\"tnp-field tnp-field-email\"><label for=\"tnp-1\">Email</label>\n<div class=\"mega-pm-container mega-pm-icon-container mega-shadow-dom\" data-input-link=\"d7af645d-5472-42cf-8b8c-ae460bb586d8\"></div><input class=\"tnp-email\" type=\"email\" name=\"ne\" id=\"tnp-1\" value=\"\" placeholder=\"\" required=\"\" data-dashlane-rid=\"44c44f7252e057c1\" data-dashlane-classification=\"email\" data-kwimpalastatus=\"alive\" data-kwimpalaid=\"1741904924494-0\" autocomplete=\"off\" data-input-link=\"d7af645d-5472-42cf-8b8c-ae460bb586d8\" mega-pwm-event=\"true\"></div>\n<div class=\"tnp-field tnp-field-button\"><input class=\"tnp-submit\" type=\"submit\" value=\"Subscribe\" data-dashlane-rid=\"2efbb92cb4dee29d\" data-dashlane-classification=\"action,subscribe\">\n</div>\n</form>\n</div>"
     }
   },
   "footer": {

@@ -1,11 +1,7 @@
 ---
 import AboutSection from "../components/about_section/index.astro";
-import CallToActionSection from "../components/CallToActionSection.astro";
 import HeroSection from "../components/hero_section/HeroSection";
-import NewsletterSection from "../components/NewsletterSection.astro";
 import ServicesSection from "../components/services/index.astro";
-import StatsSection from "../components/StatsSection.astro";
-import TestimonialsSection from "../components/TestimonialsSection.astro";
 import Layout from "../layouts/Layout.astro";
 
 import { homepage } from "../../public/data/data.json";
@@ -19,8 +15,4 @@ const { heroSection } = homepage;
   <!-- <ApproachSection /> -->
   <ServicesSection />
   <!-- <ROISection /> -->
-  <StatsSection />
-  <TestimonialsSection />
-  <CallToActionSection />
-  <NewsletterSection />
 </Layout>
