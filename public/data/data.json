@@ -90,9 +90,10 @@
       "keywords": "marketing consultant, Morocco, Turkey, IT, data analysis"
     },
     "approachSection": {
-      "title": "My Data-First Approach",
-      "description": "I believe in data-driven decisions for sustainable growth. From funnel optimization to brand awareness, I craft personalized strategies that address your unique needs.",
-      "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy"
+      "title": "My approach",
+      "description": "Digital marketing is the backbone of business growth, but without a clear strategy, performance analysis, and creativity, businesses risk high costs and low conversions. I believe in **data-driven decision-making** and **structured marketing plans** to create a roadmap for success, ensuring every campaign is optimized for maximum ROI. My approach is centered around understanding each business's unique challenges and goals, then leveraging my expertise to develop a **tailored marketing strategy** that will address its specific needs. From optimizing your **marketing funnel** to refining the **brand awareness**. My mission is to provide guidance every step of the way.",
+      "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy",
+      "cta": "Let’s Build a Winning Strategy!"
     },
 
     "servicesSection": {
@@ -102,86 +103,86 @@
         {
           "id": "strategy",
           "title": "Marketing Strategy Development",
-          "description": "Crafting data-backed strategies to achieve your business goals and reach your target audience.",
-          "icon": "chess",
+
+          "description": "Designing custom marketing strategies that align with business goals and target audiences, ensuring measurable growth and higher ROI.",
+          "icon": "fa-chess",
           "keywords": "marketing plan, strategy, target audience"
         },
         {
           "id": "growth",
-          "title": "Growth Marketing",
-          "description": "Implementing data-driven strategies to boost growth and maximize your return on investment (ROI).",
-          "icon": "chart-line",
-          "keywords": "growth hacking, roi, data-driven marketing"
-        },
-        {
-          "id": "email",
-          "title": "Email Marketing",
-          "description": "Personalized campaigns to engage your audience and nurture leads with email marketing.",
-          "icon": "mail-bulk",
-          "keywords": "email campaigns, lead nurturing, personalized email"
-        },
-        {
-          "id": "advertising",
-          "title": "Online Advertising",
-          "description": "Targeted campaigns across diverse platforms to connect with your ideal customers.",
-          "icon": "adversal",
-          "keywords": "paid advertising, ppc, google ads, social media ads"
-        },
-        {
-          "id": "consulting",
-          "title": "Marketing Consulting & Advisory",
-          "description": "Expert guidance to overcome challenges and unlock new opportunities.",
-          "icon": "chart-bar",
-          "keywords": "consulting, marketing advice, strategy"
-        },
-        {
-          "id": "seo",
-          "title": "Search Engine Optimization (SEO)",
-          "description": "Content and website optimization to improve your search ranking and drive organic traffic.",
-          "icon": "search",
-          "keywords": "seo, organic traffic, keyword research"
-        },
-        {
-          "id": "research",
-          "title": "Market Research and Analysis",
-          "description": "Understanding customer behavior and industry trends to inform your marketing decisions.",
-          "icon": "map-marked-alt",
-          "keywords": "market analysis, competitive analysis, target market"
-        },
-        {
-          "id": "performance",
-          "title": "Performance Measurement",
-          "description": "Tracking and analyzing marketing data to optimize ROI and make data-driven decisions.",
-          "icon": "sort-numeric-up-alt",
-          "keywords": "marketing analytics, key performance indicators, data"
-        },
-        {
-          "id": "training",
-          "title": "Training and Workshops",
-          "description": "Customized workshops to educate your team on best practices and industry trends.",
-          "icon": "chalkboard-teacher",
-          "keywords": "marketing training, workshops, team education"
+
+          "title": "Growth Marketing & Performance Optimization",
+          "description": "Implementing data-driven growth marketing strategies to scale business performance, optimize acquisition channels, and maximize ROI.",
+          "icon": "fa-chart-line",
+          "keywords": "growth hacking, performance optimization, data-driven"
         },
         {
           "id": "leadgen",
           "title": "Lead Generation & Conversion Optimization",
-          "description": "Targeted tactics and CRO techniques to attract and convert leads into customers.",
-          "icon": "magnet",
-          "keywords": "lead generation, conversion rate optimization, cro"
+          "description": "Developing high-conversion lead generation strategies and optimizing conversion funnels to turn prospects into customers.",
+          "icon": "fa-funnel-dollar",
+          "keywords": "lead generation, conversion optimization, sales funnel"
+        },
+        {
+          "id": "seo",
+          "title": "Search Engine Optimization (SEO)",
+          "description": "Boosting organic traffic with on-page SEO, technical SEO, and content strategy tailored for high search rankings and increased conversions.",
+          "icon": "fa-search",
+          "keywords": "seo, organic traffic, technical seo"
+        },
+        {
+          "id": "advertising",
+
+          "title": "Paid Advertising & Campaign Management",
+          "description": "Crafting and managing targeted online advertising campaigns across platforms like Google Ads, Meta Ads, and LinkedIn Ads, optimizing for maximum ROI.",
+          "icon": "fa-ad",
+          "keywords": "paid advertising, campaign management, digital ads"
+        },
+        {
+          "id": "consulting",
+          "title": "Marketing Consulting & Advisory",
+
+          "description": "Providing expert digital marketing consulting, actionable recommendations, and strategic advisory to help businesses scale and overcome challenges.",
+          "icon": "fa-handshake",
+          "keywords": "consulting, advisory, strategic planning"
+        },
+        {
+          "id": "research",
+
+          "title": "Market Research & Audience Insights",
+          "description": "Conducting in-depth market research and audience insights to understand customer behaviors, industry trends, and competitive landscapes.",
+          "icon": "fa-magnifying-glass-chart",
+          "keywords": "market research, audience insights, competitive analysis"
+        },
+        {
+          "id": "email",
+          "title": "Email Marketing & Automation",
+          "description": "Engaging and nurturing your audience with personalized email marketing campaigns and automation to drive conversions and enhance customer relationships.",
+          "icon": "fa-envelope",
+          "keywords": "email marketing, automation, nurture campaigns"
         },
         {
           "id": "social",
           "title": "Social Media Marketing",
-          "description": "Engaging strategies to build brand awareness and drive traffic on social platforms.",
-          "icon": "users",
-          "keywords": "social media, brand awareness, engagement"
+
+          "description": "Building a strong social media strategy with a focus on brand awareness, audience engagement, and driving website traffic through targeted content and campaigns.",
+          "icon": "fa-share-nodes",
+          "keywords": "social media, engagement, content strategy"
         },
         {
           "id": "mobile",
-          "title": "Mobile App Marketing",
-          "description": "Effective app promotion through ASO, mobile advertising, and install campaigns.",
-          "icon": "mobile-alt",
-          "keywords": "mobile app marketing, aso, app installs"
+
+          "title": "Mobile App Marketing & User Acquisition",
+          "description": "Promoting mobile apps through App Store Optimization (ASO), targeted ads, and user acquisition strategies to drive downloads and boost engagement.",
+          "icon": "fa-mobile-screen",
+          "keywords": "mobile marketing, aso, user acquisition"
+        },
+        {
+          "id": "training",
+          "title": "Training, Workshops & Marketing Education",
+          "description": "Providing hands-on training and workshops on digital marketing best practices, technologies, and strategies to upskill your internal teams and empower your business growth.",
+          "icon": "fa-chalkboard-user",
+          "keywords": "training, workshops, education"
         }
       ]
     },

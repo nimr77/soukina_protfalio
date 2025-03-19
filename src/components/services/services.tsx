@@ -41,8 +41,7 @@ const Services: React.FC<Props> = ({ services }) => {
   return (
     <motion.div
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-      variants={containerVariants}
-      initial="hidden"
+      variants={containerVariants}      initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
