@@ -1,81 +1,14 @@
-# name: Deploy Astro Website
-
-# on:
-#   push:
-#     branches:
-#       - main  # Trigger deployment on pushes to the `main` branch
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       # Checkout the repository
-#       - name: Checkout code
-#         uses: actions/checkout@v3
-
-#       # Install Bun (the JavaScript runtime)
-#       - name: Install Bun
-#         run: curl -fsSL https://bun.sh/install | bash
-
-#       # Add Bun to PATH
-#       - name: Add Bun to PATH
-#         run: echo "$HOME/.bun/bin" >> $GITHUB_PATH
-
-#       # Remove old node_modules and lock files
-#       - name: Clean up old dependencies
-#         run: |
-#           rm -rf node_modules
-#           rm -f package-lock.json
-#           rm -f bun.lockb
-
-#       # Install dependencies using Bun
-#       - name: Install dependencies
-#         run: bun install
-
-#       # Build the Astro project using Bun
-#       - name: Build the Astro project
-#         run: bun run build
-
-
-#       - name: Set up Firebase Authentication using Service Account
-#         uses: google-github-actions/auth@v0
-#         with:
-#           credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-
-#       - name: Install Firebase CLI
-#         run: |
-#           bun add -g firebase-tools
-
-#       - name: Deploy to Firebase Hosting
-#         run: |
-#           firebase deploy --only hosting
-#         env:
-#           CI: false
-#       # # Deploy to GitHub Pages (using the latest stable version of the deploy action)
-#       # - name: Deploy to GitHub Pages
-#       #   uses: JamesIves/github-pages-deploy-action@v4  # Updated version
-#       #   with:
-#       #     branch: gh-pages  # The branch that will be used to deploy
-#       #     folder: dist  # The folder that contains the built Astro site
-#       #   env:
-#       #     GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-
-#       # # Log the deployed site URL automatically
-#       # - name: Log deployed site URL
-#       #   run: |
-#       #     DEPLOYED_URL="https://${{ github.actor }}.github.io/${{ github.event.repository.name }}"
-#       #     echo "Your site is deployed to: https://${{ github.actor }}.github.io/${{ github.event.repository.name }}"
-
-
-name: Deploy Astro to GitHub Pages with Bun
+name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow on push to the `main` branch or manual execution
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [main]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
+# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -86,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
-      - name: Install, build, and upload your site
-        uses: withastro/action@v1
+        uses: actions/checkout@v4
+      - name: Install, build, and upload your site output
+        uses: withastro/action@v2
         # with:
-        # path: . # The root location of your Astro project inside the repository. (optional)
-        # node-version: 18 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
-        # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+            # path: . # The root location of your Astro project inside the repository. (optional)
+            # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
+            # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
     needs: build
@@ -103,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
