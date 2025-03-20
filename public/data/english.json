@@ -14,19 +14,28 @@
     },
     "navigation": [
       {
-        "label": "Home",
-        "link": "/"
+        "label": "Soukaina Mehdi",
+        "sectionId": "about"
       },
       {
-        "label": "Sample Page",
-        "link": "/sample-page/"
+        "label": "Work",
+        "sectionId": "work"
+      },
+      {
+        "label": "Journey",
+        "sectionId": "journey"
+      },
+      {
+        "label": "Services",
+        "sectionId": "services"
+      },
+      {
+        "label": "Contact",
+        "cta": true,
+        "sectionId": "contact"
       }
     ],
     "socialLinks": [
-      {
-        "platform": "instagram",
-        "url": "http://sukenamediinstg"
-      },
       {
         "platform": "linkedin",
         "url": "http://soukainamehdi"
