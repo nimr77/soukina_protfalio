@@ -78,7 +78,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
           className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
           variants={textVariants}
         >
-         🚀  {heroSection.title}
+        {heroSection.title}
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-white mb-8 leading-relaxed"
