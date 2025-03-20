@@ -64,6 +64,7 @@ const buttonVariants = {
 const HeroSection: React.FC<Props> = ({ heroSection }) => {
   return (
     <section
+      id="about"
       className="relative h-screen flex items-center justify-start bg-cover bg-center"
       style={{ backgroundImage: `url('${heroSection.imageUrl}')` }}
     >

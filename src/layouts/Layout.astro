@@ -7,97 +7,103 @@ const { logo, navigation, socialLinks } = header;
 
 <script src="https://kit.fontawesome.com/ad03c01270.js" crossorigin="anonymous"
 ></script>
-
-<header
-  class="fixed top-0 left-0 w-full z-20 transition-all duration-300 bg-transparent text-white"
-  data-scroll="0"
->
-  <div class="container mx-auto flex items-center justify-between py-4">
-    <a href={logo.link} class="flex items-center">
-      <img src={logo.imageUrl} alt={logo.altText} class="h-10 mr-2" />
-      <span class="font-bold text-xl">{logo.altText}</span>
-    </a>
-    <div>
-      <ul class="flex space-x-5">
-        {
-          navigation.map((item) => (
-            <li id={item.label}>
-              <a
-                href={`#${item.sectionId}`}
-                class={`hover:text-[#DC3544] hover:font-bold transition-all duration-300 ${
-                  item.cta ? "border border-[#DC3544] rounded-xl px-4 py-2" : ""
-                }`}
-                onclick={`
-                  event.preventDefault();
-                  document.querySelector('${"#" + item.sectionId}').scrollIntoView({ behavior: 'smooth' });
-                  history.pushState(null, null, '#${item.sectionId}');
-                `}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-
-      <!-- <div>
-        {
-          socialLinks.map((link) => (
-            <a
-              id={link.platform}
-              href={link.url}
-              aria-label={link.platform}
-              class="text-gray-500 hover:text-gray-700"
-            >
-              {link.platform}
-            </a>
-          ))
-        }
-      </div> -->
-    </div>
-  </div>
-</header>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector("header");
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        header?.classList.add("bg-white", "shadow-md");
-        header?.classList.remove("bg-transparent");
-        header?.setAttribute("data-scroll", "1");
-      } else {
-        header?.classList.remove("bg-white", "shadow-md");
-        header?.classList.add("bg-transparent");
-        header?.setAttribute("data-scroll", "0");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Call handleScroll once on load to set initial state
-    handleScroll();
-  });
-</script>
-
-<style lang="postcss">
-header {
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header[data-scroll="0"] {
-    background-color: transparent;
-    color: white;
-}
-
-header[data-scroll="1"] {
-    background-color: #121315;
-    color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-</style>
-
 <body class="font-sans bg-[#121315] text-white">
+  <header
+    class="fixed top-0 left-0 w-full z-20 transition-all duration-300 bg-transparent text-white"
+    data-scroll="0"
+  >
+    <div class="container mx-auto flex items-center justify-between py-4">
+      <a href={logo.link} class="flex items-center">
+        <img src={logo.imageUrl} alt={logo.altText} class="h-10 mr-2" />
+        <span class="font-bold text-xl">{logo.altText}</span>
+      </a>
+      <div>
+        <nav>
+          <ul class="flex space-x-5">
+            {
+              navigation.map((item) => (
+                <li id={item.label}>
+                  <a
+                    href={`#${item.sectionId}`}
+                    class={`hover:text-[#DC3544]  transition-all duration-300 ${
+                      item.cta
+                        ? "border border-[#DC3544] rounded-xl px-4 py-2"
+                        : ""
+                    }`}
+                    onclick={`
+                  event.preventDefault();
+                  const yOffset = -80;
+                  const element = document.querySelector('${"#" + item.sectionId}');
+                  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  window.scrollTo({top: y, behavior: 'smooth'});
+                  history.pushState(null, null, '#${item.sectionId}');                `}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+        <!-- <div>
+          {
+            socialLinks.map((link) => (
+              <a
+                id={link.platform}
+                href={link.url}
+                aria-label={link.platform}
+                class="text-gray-500 hover:text-gray-700"
+              >
+                {link.platform}
+              </a>
+            ))
+          }
+        </div> -->
+      </div>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector("header");
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          header?.classList.add("bg-white", "shadow-md");
+          header?.classList.remove("bg-transparent");
+          header?.setAttribute("data-scroll", "1");
+        } else {
+          header?.classList.remove("bg-white", "shadow-md");
+          header?.classList.add("bg-transparent");
+          header?.setAttribute("data-scroll", "0");
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      // Call handleScroll once on load to set initial state
+      handleScroll();
+    });
+  </script>
+
+  <style lang="postcss">
+    header {
+      background-color: transparent; /* Initial transparent background */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header[data-scroll="0"] {
+      /* Transparent background and white text */
+      background-color: transparent;
+      color: white;
+    }
+
+    header[data-scroll="1"] {
+      /* Solid white background and gray text */
+      background-color: #121315;
+      color: white; /* Dark gray text */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    }
+  </style>
+
   <slot />
 </body>
