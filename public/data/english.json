@@ -107,19 +107,17 @@
 
     "servicesSection": {
       "title": "Services",
-      "description": "I provide a comprehensive range of digital marketing services to elevate your brand and drive growth. Learn more about how I can help your business thrive:",
+      "description": "6 Marketing Pillars We Can Build Together",
       "services": [
         {
           "id": "strategy",
           "title": "Marketing Strategy Development",
-
-          "description": "Designing custom marketing strategies that align with business goals and target audiences, ensuring measurable growth and higher ROI.",
+          "description": "Designing custom marketing strategies that align with business goals and target audiences, ensuring measurable growth via an executive marketing plan.",
           "icon": "fa-chess",
           "keywords": "marketing plan, strategy, target audience"
         },
         {
           "id": "growth",
-
           "title": "Growth Marketing & Performance Optimization",
           "description": "Implementing data-driven growth marketing strategies to scale business performance, optimize acquisition channels, and maximize ROI.",
           "icon": "fa-chart-line",
@@ -128,7 +126,7 @@
         {
           "id": "leadgen",
           "title": "Lead Generation & Conversion Optimization",
-          "description": "Developing high-conversion lead generation strategies and optimizing conversion funnels to turn prospects into customers.",
+          "description": "Developing high-conversion lead generation and optimizing conversion funnels to turn prospects into customers at the lowest cost possible.",
           "icon": "fa-funnel-dollar",
           "keywords": "lead generation, conversion optimization, sales funnel"
         },
@@ -141,57 +139,17 @@
         },
         {
           "id": "advertising",
-
           "title": "Paid Advertising & Campaign Management",
           "description": "Crafting and managing targeted online advertising campaigns across platforms like Google Ads, Meta Ads, and LinkedIn Ads, optimizing for maximum ROI.",
           "icon": "fa-ad",
           "keywords": "paid advertising, campaign management, digital ads"
         },
         {
-          "id": "consulting",
-          "title": "Marketing Consulting & Advisory",
-
-          "description": "Providing expert digital marketing consulting, actionable recommendations, and strategic advisory to help businesses scale and overcome challenges.",
-          "icon": "fa-handshake",
-          "keywords": "consulting, advisory, strategic planning"
-        },
-        {
-          "id": "research",
-
-          "title": "Market Research & Audience Insights",
-          "description": "Conducting in-depth market research and audience insights to understand customer behaviors, industry trends, and competitive landscapes.",
-          "icon": "fa-magnifying-glass-chart",
-          "keywords": "market research, audience insights, competitive analysis"
-        },
-        {
-          "id": "email",
-          "title": "Email Marketing & Automation",
-          "description": "Engaging and nurturing your audience with personalized email marketing campaigns and automation to drive conversions and enhance customer relationships.",
-          "icon": "fa-envelope",
-          "keywords": "email marketing, automation, nurture campaigns"
-        },
-        {
           "id": "social",
           "title": "Social Media Marketing",
-
           "description": "Building a strong social media strategy with a focus on brand awareness, audience engagement, and driving website traffic through targeted content and campaigns.",
           "icon": "fa-share-nodes",
           "keywords": "social media, engagement, content strategy"
-        },
-        {
-          "id": "mobile",
-
-          "title": "Mobile App Marketing & User Acquisition",
-          "description": "Promoting mobile apps through App Store Optimization (ASO), targeted ads, and user acquisition strategies to drive downloads and boost engagement.",
-          "icon": "fa-mobile-screen",
-          "keywords": "mobile marketing, aso, user acquisition"
-        },
-        {
-          "id": "training",
-          "title": "Training, Workshops & Marketing Education",
-          "description": "Providing hands-on training and workshops on digital marketing best practices, technologies, and strategies to upskill your internal teams and empower your business growth.",
-          "icon": "fa-chalkboard-user",
-          "keywords": "training, workshops, education"
         }
       ]
     },
