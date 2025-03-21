@@ -1,0 +1,20 @@
+---
+import { approachSection } from "../../../public/data/english.json";
+
+import { ButtonCTA } from "../button/button";
+// import Title from "../text/title.astro";
+import ApproachSectionBody from "./text";
+---
+
+<section class="py-8 bg-gray-50" id="my-approach">
+  <div class="container mx-auto flex flex-col items-center justify-center">
+    <!-- <Title>
+      {approachSection.title}
+    </Title> -->
+    <ApproachSectionBody
+      description={approachSection.description}
+      client:load
+    />
+    <ButtonCTA label={approachSection.cta} />
+  </div>
+</section>

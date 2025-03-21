@@ -1,6 +1,7 @@
 ---
-import MyJourney from "../components/MyJourney/index.astro";
 import HeroSection from "../components/hero_section/HeroSection";
+import MyApprouch from "../components/MyApproach/index.astro";
+import MyJourney from "../components/MyJourney/index.astro";
 import ServicesSection from "../components/services/index.astro";
 import WorkedWith from "../components/workedWith/index.astro";
 import Layout from "../layouts/Layout.astro";
@@ -13,6 +14,7 @@ const { heroSection } = homepage;
 <Layout class="font-sans">
   <HeroSection client:load heroSection={heroSection} />
   <WorkedWith />
+  <MyApprouch />
   <MyJourney />
   <!-- <ApproachSection /> -->
   <ServicesSection />

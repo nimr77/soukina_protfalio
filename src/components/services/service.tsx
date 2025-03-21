@@ -17,7 +17,7 @@ const ServiceCard: React.FC<Props> = ({ service, id }) => {
   return (
     <motion.div
       id={id}
-      className="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl hover:border-transparent transition-all duration-500 ease-in h-[250px]"
+      className="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl hover:border-transparent transition-all duration-500 ease-in"
       viewport={{ once: true }}
     >
       <div className="flex items-center mb-4">

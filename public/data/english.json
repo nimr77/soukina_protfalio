@@ -22,6 +22,10 @@
         "sectionId": "work"
       },
       {
+        "label": "My Approach",
+        "sectionId": "my-approach"
+      },
+      {
         "label": "Journey",
         "sectionId": "journey"
       },
@@ -41,6 +45,12 @@
         "url": "http://soukainamehdi"
       }
     ]
+  },
+  "approachSection": {
+    "title": "My Approach",
+    "description": "Digital marketing is the backbone of business growth, but without a clear **strategy**, **performance analysis**, and **creativity**, businesses risk high costs and low conversions. As a digital marketing consultant, I believe in **data-driven decision-making** and structured **marketing plans** to create a roadmap for success, ensuring every campaign is optimized for **maximum ROI**. My approach is centered around understanding each business *unique* challenges and goals, then leveraging my expertise to develop a *tailored marketing strategy* that will address its specific needs. From optimizing your *marketing funnel* to **low ad cost** and **more conversions**. My mission is to provide guidance every step of the way.",
+    "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy",
+    "cta": "Let's Build a Winning Strategy!"
   },
   "myJourneySection": {
     "title": "My Journey",
@@ -97,12 +107,6 @@
         "Expertise in marketing strategy, data analysis, and team leadership."
       ],
       "keywords": "marketing consultant, Morocco, Turkey, IT, data analysis"
-    },
-    "approachSection": {
-      "title": "My approach",
-      "description": "Digital marketing is the backbone of business growth, but without a clear strategy, performance analysis, and creativity, businesses risk high costs and low conversions. I believe in **data-driven decision-making** and **structured marketing plans** to create a roadmap for success, ensuring every campaign is optimized for maximum ROI. My approach is centered around understanding each business's unique challenges and goals, then leveraging my expertise to develop a **tailored marketing strategy** that will address its specific needs. From optimizing your **marketing funnel** to refining the **brand awareness**. My mission is to provide guidance every step of the way.",
-      "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy",
-      "cta": "Let’s Build a Winning Strategy!"
     },
 
     "servicesSection": {
@@ -174,9 +178,9 @@
           "type": "png"
         },
         {
-          "image": "images/companies/SQLI Logo.jpeg",
+          "image": "images/companies/sqli.svg",
           "name": "SQLI",
-          "type": "jpeg"
+          "type": "svg"
         },
         {
           "image": "images/companies/the lifeco logo.png",
