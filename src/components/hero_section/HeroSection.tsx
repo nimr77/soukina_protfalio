@@ -72,8 +72,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
       <img
               src={heroSection.imagePath}
               alt="Hero Background"
-              className="absolute inset-0 w-full h-full object-cover -z-10"
-            />
+              className="absolute right-0 bottom-0 h-[94%] object-cover -z-10"            />
       
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <motion.div
