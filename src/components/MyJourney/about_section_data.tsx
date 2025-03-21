@@ -64,6 +64,16 @@ const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
         >
           {myJourneySection.description}
         </motion.p>
+
+        {/* <GhostText
+        text={myJourneySection.description}
+        className="text-gray-700  mb-12 leading-relaxed text-lg"
+          duration={10}
+          wordDelay={0.1}
+          blurRadius={100}
+          fontSize={300}
+          sequential={true}
+        ></GhostText> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
             className="space-y-4"

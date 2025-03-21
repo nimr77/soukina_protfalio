@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { GhostText } from '../GhostText/ghost-text';
 
 interface HeroSection {
   title: string;
@@ -81,12 +82,18 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
         initial="hidden"
         animate="visible"
       >
-        <motion.h1
+        {/* <motion.h1
           className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
           variants={textVariants}
         >
         {heroSection.title}
-        </motion.h1>
+        </motion.h1> */}
+
+        <GhostText text={heroSection.title} className="text-xl md:text-xl font-bold text-white mb-4 leading-tigh text-start"           duration={10}
+          wordDelay={0.1}
+          blurRadius={100}
+          fontSize={300}
+          sequential={true}/>
         <motion.p
           className="text-lg md:text-xl text-white mb-8 leading-relaxed"
           variants={textVariants}
