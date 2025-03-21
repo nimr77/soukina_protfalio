@@ -8,7 +8,7 @@
   },
   "header": {
     "logo": {
-      "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2024/03/logo-1.svg",
+      "imagePath": "images/SoukainaMehdi Logo Transparent.png",
       "altText": "Soukaina Mehdi - Digital Marketing Consultant",
       "link": "/"
     },
@@ -46,49 +46,50 @@
       }
     ]
   },
-  "approachSection": {
-    "title": "My Approach",
-    "description": "Digital marketing is the backbone of business growth, but without a clear **strategy**, **performance analysis**, and **creativity**, businesses risk high costs and low conversions. As a digital marketing consultant, I believe in **data-driven decision-making** and structured **marketing plans** to create a roadmap for success, ensuring every campaign is optimized for **maximum ROI**. My approach is centered around understanding each business *unique* challenges and goals, then leveraging my expertise to develop a *tailored marketing strategy* that will address its specific needs. From optimizing your *marketing funnel* to **low ad cost** and **more conversions**. My mission is to provide guidance every step of the way.",
-    "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy",
-    "cta": "Let's Build a Winning Strategy!"
-  },
-  "myJourneySection": {
-    "title": "My Journey",
-    "description": "I believe in the power of data to drive informed decision-making and fuel business growth. My approach is centered around understanding your unique challenges and goals, then leveraging my expertise to develop tailored strategies that address your specific needs. From optimizing your marketing funnel to refining your brand messaging, I’m here to guide you every step of the way.",
-    "qualifications": {
-      "column1": [
-        {
-          "text": "French & English Fluent Arabic, Native",
-          "icon": "fas fa-check-circle"
-        },
-        {
-          "text": "My Business operates in Morocco and Turkey",
-          "icon": "fas fa-check-circle"
-        },
-        {
-          "text": "Information Technology Background",
-          "icon": "fas fa-check-circle"
-        }
-      ],
-      "column2": [
-        {
-          "text": "Management and Team Leadership",
-          "icon": "fas fa-check-circle"
-        },
-        {
-          "text": "Digital Marketing Expertise",
-          "icon": "fas fa-check-circle"
-        },
-        {
-          "text": "Performance Tracking, Analysis and Reporting",
-          "icon": "fas fa-check-circle"
-        }
-      ]
-    }
-  },
+
   "homepage": {
+    "approachSection": {
+      "title": "My Approach",
+      "description": "Digital marketing is the backbone of business growth, but without a clear **strategy**, **performance analysis**, and **creativity**, businesses risk high costs and low conversions. As a digital marketing consultant, I believe in **data-driven decision-making** and structured **marketing plans** to create a roadmap for success, ensuring every campaign is optimized for **maximum ROI**. My approach is centered around understanding each business *unique* challenges and goals, then leveraging my expertise to develop a *tailored marketing strategy* that will address its specific needs. From optimizing your *marketing funnel* to **low ad cost** and **more conversions**. My mission is to provide guidance every step of the way.",
+      "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy",
+      "cta": "Let's Build a Winning Strategy!"
+    },
+    "myJourneySection": {
+      "title": "My Journey",
+      "description": "I believe in the power of data to drive informed decision-making and fuel business growth. My approach is centered around understanding your unique challenges and goals, then leveraging my expertise to develop tailored strategies that address your specific needs. From optimizing your marketing funnel to refining your brand messaging, I’m here to guide you every step of the way.",
+      "qualifications": {
+        "column1": [
+          {
+            "text": "French & English Fluent Arabic, Native",
+            "icon": "fas fa-check-circle"
+          },
+          {
+            "text": "My Business operates in Morocco and Turkey",
+            "icon": "fas fa-check-circle"
+          },
+          {
+            "text": "Information Technology Background",
+            "icon": "fas fa-check-circle"
+          }
+        ],
+        "column2": [
+          {
+            "text": "Management and Team Leadership",
+            "icon": "fas fa-check-circle"
+          },
+          {
+            "text": "Digital Marketing Expertise",
+            "icon": "fas fa-check-circle"
+          },
+          {
+            "text": "Performance Tracking, Analysis and Reporting",
+            "icon": "fas fa-check-circle"
+          }
+        ]
+      }
+    },
     "heroSection": {
-      "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2024/03/soukainamehdi.co-Black.png",
+      "imagePath": "images/Su file.png",
       "title": "Digital Marketing & Business Growth Consultant",
       "description": "I design **result-driven marketing strategies** that turn traffic into revenue,drive more leads & sales, and **maximize ROI** with Performance optimization.",
       "button": {
@@ -98,7 +99,7 @@
     },
     "aboutSection": {
       "title": "About Soukaina Mehdi",
-      "imageUrl": "https://soukainamehdi.co/wp-content/uploads/2024/03/soukainamehdi_115new-scaled.jpg",
+      "imagePath": "images/soukainamehdi_115.jpg",
       "description": "Experienced IT professional turned marketing expert. I'm passionate about using data to solve business challenges and fuel growth for clients in Morocco and Turkey.",
       "qualifications": [
         "Fluent in French, English, Arabic",
@@ -118,42 +119,48 @@
           "title": "Marketing Strategy Development",
           "description": "Designing custom marketing strategies that align with business goals and target audiences, ensuring measurable growth via an executive marketing plan.",
           "icon": "fa-chess",
-          "keywords": "marketing plan, strategy, target audience"
+          "keywords": "marketing plan, strategy, target audience",
+          "color": "rgb(75, 107, 175)"
         },
         {
           "id": "growth",
           "title": "Growth Marketing & Performance Optimization",
           "description": "Implementing data-driven growth marketing strategies to scale business performance, optimize acquisition channels, and maximize ROI.",
           "icon": "fa-chart-line",
-          "keywords": "growth hacking, performance optimization, data-driven"
+          "keywords": "growth hacking, performance optimization, data-driven",
+          "color": "rgb(46, 204, 113)"
         },
         {
           "id": "leadgen",
           "title": "Lead Generation & Conversion Optimization",
           "description": "Developing high-conversion lead generation and optimizing conversion funnels to turn prospects into customers at the lowest cost possible.",
           "icon": "fa-funnel-dollar",
-          "keywords": "lead generation, conversion optimization, sales funnel"
+          "keywords": "lead generation, conversion optimization, sales funnel",
+          "color": "rgb(241, 196, 15)"
         },
         {
           "id": "seo",
           "title": "Search Engine Optimization (SEO)",
           "description": "Boosting organic traffic with on-page SEO, technical SEO, and content strategy tailored for high search rankings and increased conversions.",
           "icon": "fa-search",
-          "keywords": "seo, organic traffic, technical seo"
+          "keywords": "seo, organic traffic, technical seo",
+          "color": "rgb(52, 152, 219)"
         },
         {
           "id": "advertising",
           "title": "Paid Advertising & Campaign Management",
           "description": "Crafting and managing targeted online advertising campaigns across platforms like Google Ads, Meta Ads, and LinkedIn Ads, optimizing for maximum ROI.",
           "icon": "fa-ad",
-          "keywords": "paid advertising, campaign management, digital ads"
+          "keywords": "paid advertising, campaign management, digital ads",
+          "color": "rgb(231, 76, 60)"
         },
         {
           "id": "social",
           "title": "Social Media Marketing",
           "description": "Building a strong social media strategy with a focus on brand awareness, audience engagement, and driving website traffic through targeted content and campaigns.",
           "icon": "fa-share-nodes",
-          "keywords": "social media, engagement, content strategy"
+          "keywords": "social media, engagement, content strategy",
+          "color": "rgb(155, 89, 182)"
         }
       ]
     },

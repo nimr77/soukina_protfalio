@@ -8,6 +8,7 @@ interface Service {
   description: string;
   icon: string;
   keywords: string;
+  color: string;
 }
 
 interface Props {

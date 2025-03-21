@@ -1,7 +1,8 @@
 ---
-import { homepage, myJourneySection } from "../../../public/data/english.json";
+import { homepage } from "../../../public/data/english.json";
 import MyJourney from "./about_section_data";
 const { aboutSection } = homepage;
+const myJourneySection = homepage.myJourneySection;
 ---
 
 <section id="journey" class="py-8 bg-gray-50">
@@ -9,7 +10,7 @@ const { aboutSection } = homepage;
     class="container mx-auto flex items-center justify-center flex-col md:flex-row"
   >
     <img
-      src={aboutSection.imageUrl}
+      src={aboutSection.imagePath}
       alt={aboutSection.title}
       class="w-xl rounded-3xl mr-8 mb-4 md:mb-0"
     />

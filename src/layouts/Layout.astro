@@ -14,8 +14,12 @@ const { logo, navigation, socialLinks } = header;
   >
     <div class="container mx-auto flex items-center justify-between py-4">
       <a href={logo.link} class="flex items-center">
-        <img src={logo.imageUrl} alt={logo.altText} class="h-10 mr-2" />
-        <span class="font-bold text-xl">{logo.altText}</span>
+        <img
+          src={logo.imagePath}
+          alt={logo.altText}
+          class="h-10 mr-2 brightness-0 invert"
+        />
+        <span class="font-bold text-xl text-white">{logo.altText}</span>
       </a>
       <div>
         <nav>

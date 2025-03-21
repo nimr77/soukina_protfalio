@@ -9,7 +9,7 @@ interface HeroSection {
     label: string;
     link: string;
   };
-  imageUrl: string;
+  imagePath: string;
 }
 
 interface Props {
@@ -66,8 +66,14 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
     <section
       id="about"
       className="relative h-screen flex items-center justify-start bg-cover bg-center"
-      style={{ backgroundImage: `url('${heroSection.imageUrl}')` }}
+      // style={{ backgroundImage: `url('${heroSection.imagePath}')` }}
     >
+      <img
+              src={heroSection.imagePath}
+              alt="Hero Background"
+              className="absolute inset-0 w-full h-full object-cover -z-10"
+            />
+      
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <motion.div
         className="container text-left relative z-10 px-8 md:px-60 max-w-7xl"
