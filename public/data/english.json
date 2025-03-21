@@ -171,19 +171,19 @@
           "type": "svg"
         },
         {
-          "image": "images/companies/International Clinics.jpeg",
+          "image": "images/companies/International Clinics.png",
           "name": "International Clinics",
-          "type": "jpeg"
+          "type": "png"
         },
         {
-          "image": "images/companies/Publicis Groupe Logo.png",
+          "image": "images/companies/publicis-groupe-logo_0.png",
           "name": "Publicis Groupe",
           "type": "png"
         },
         {
-          "image": "images/companies/sqli.svg",
+          "image": "images/companies/sqli_logo.png",
           "name": "SQLI",
-          "type": "svg"
+          "type": "png"
         },
         {
           "image": "images/companies/the lifeco logo.png",
