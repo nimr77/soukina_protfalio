@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import AnimatedTitle from '../text/animatedTitle';
 
 interface Qualification {
   text: string;
@@ -45,16 +46,13 @@ const itemVariants = {
 const MyJourney: React.FC<Props> = ({ myJourneySection }) => {
   return (
     <section className="py-16">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-6xl font-bold  mb-8 text-[#121315]"
-          variants={itemVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          {myJourneySection.title}
-        </motion.h2>
+      <div className="container mx-auto px-4 items-start flex flex-col">
+  
+
+              <AnimatedTitle title={myJourneySection.title} >
+
+              </AnimatedTitle>  
+        
         <motion.p
           className="text-gray-700  mb-12 leading-relaxed text-lg"
           variants={itemVariants}
