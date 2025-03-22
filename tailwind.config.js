@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backdropFilter: {
+        none: "none",
+        blur: "blur(20px)",
+      },
+      variants: {
+        extend: {
+          backdropFilter: ["responsive"],
+        },
+      },
       container: {
         center: true,
         padding: {
@@ -20,5 +29,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-backdrop-filter")({
+      prefix: "backdrop",
+      opacity: "20",
+    }),
+  ],
 };

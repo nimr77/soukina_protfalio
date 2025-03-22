@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { useMediaQuery } from 'react-responsive'; // Import useMediaQuery
 import { GhostText } from '../GhostText/ghost-text';
+import HeroSectionMobile from './HeroSectionMobile';
 
 interface HeroSection {
   title: string;
@@ -63,51 +65,66 @@ const buttonVariants = {
 };
 
 const HeroSection: React.FC<Props> = ({ heroSection }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 }); 
   return (
     <section
       id="about"
       className="relative h-screen flex items-center justify-start bg-cover bg-center"
       // style={{ backgroundImage: `url('${heroSection.imagePath}')` }}
     >
-      <img
-              src={heroSection.imagePath}
-              alt="Hero Background"
-              className="absolute right-0 bottom-0 h-[94%] object-cover -z-10"            />
-      
-      <div className="absolute inset-0 bg-black opacity-10"></div>
-      <motion.div
-        className="container text-left relative z-10 px-8 md:px-60 max-w-7xl"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {/* <motion.h1
-          className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
-          variants={textVariants}
-        >
-        {heroSection.title}
-        </motion.h1> */}
-
-        <GhostText text={heroSection.title} className="text-xl md:text-xl font-bold text-white mb-4 leading-tigh text-start"           duration={10}
-          wordDelay={0.1}
-          blurRadius={100}
-          fontSize={300}
-          sequential={true}/>
-        <motion.p
-          className="text-lg md:text-xl text-white mb-8 leading-relaxed"
-          variants={textVariants}
-        >
-          <ReactMarkdown>{heroSection.description}</ReactMarkdown>        
-          </motion.p>
-        <motion.a
-          href={heroSection.button.link}
-          className="inline-block bg-primary bg-red-700 text-white font-bold py-3 px-8 rounded-md shadow-lg "
-          variants={buttonVariants}
-        >
-          {heroSection.button.label || "Schedule a Free Call Today!"}
-        </motion.a>
-      </motion.div>
+      {isMobile ? (
+        // Render the mobile component
+        <HeroSectionMobile
+          title={heroSection.title}
+          description={heroSection.description}
+          button={heroSection.button}
+          imagePath={heroSection.imagePath}
+        />
+      ) : (
+        <>
+          <img
+            src={heroSection.imagePath}
+            alt="Hero Background"
+            className="absolute right-0 bottom-0 h-[94%] object-cover -z-10"
+          />
+          <div className="absolute inset-0 bg-black opacity-10"></div>
+          <motion.div
+            className="container text-left relative z-10 px-8 md:px-60 max-w-7xl"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {/* <motion.h1
+              className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
+              variants={textVariants}
+            >
+              {heroSection.title}
+            </motion.h1> */}
+            <GhostText 
+              text={heroSection.title} 
+              className="text-xl md:text-xl font-bold text-white mb-4 leading-tigh text-start"           
+              duration={10}
+              wordDelay={0.1}
+              blurRadius={100}
+              fontSize={300}
+              sequential={true}
+            />
+            <motion.p
+              className="text-lg md:text-xl text-white mb-8 leading-relaxed"
+              variants={textVariants}
+            >
+              <ReactMarkdown>{heroSection.description}</ReactMarkdown>        
+            </motion.p>
+            <motion.a
+              href={heroSection.button.link}
+              className="inline-block bg-primary bg-red-700 text-white font-bold py-3 px-8 rounded-md shadow-lg "
+              variants={buttonVariants}
+            >
+              {heroSection.button.label || "Schedule a Free Call Today!"}
+            </motion.a>
+          </motion.div>
+        </>
+      )}
     </section>
   );
-};
-export default HeroSection;
+};export default HeroSection;

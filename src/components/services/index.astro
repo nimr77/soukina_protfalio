@@ -1,11 +1,13 @@
 ---
 import { homepage } from "../../../public/data/english.json";
 import Services from "./services";
+
 const { servicesSection } = homepage;
 ---
 
 <section id="services" class="py-8 bg-white">
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4 md:px-0">
+    <!-- Add horizontal margin on mobile -->
     <h2 class="text-5xl text-gray-700 font-bold text-center mb-4">
       {servicesSection.title}
     </h2>
