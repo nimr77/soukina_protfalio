@@ -1,11 +1,12 @@
 ---
 import { homepage } from "../../../public/data/english.json";
+import SectionsPadding from "../body/SectionsPadding.astro";
 
 const { workedWith } = homepage;
 ---
 
 <section id="work" class="py-12 bg-gray-50">
-  <div class="container mx-auto">
+  <SectionsPadding>
     <!-- <Title>
       {workedWith.title}
     </Title>
@@ -14,7 +15,7 @@ const { workedWith } = homepage;
     </p> -->
 
     {/* Responsive Company Logos */}
-    <div class="overflow-x-auto scrollbar-hide">
+    <div class="scrollbar-hide">
       <div
         class="flex items-center justify-start md:justify-center space-x-4 md:space-x-8 py-6 px-4 md:px-0"
       >
@@ -31,7 +32,7 @@ const { workedWith } = homepage;
         }
       </div>
     </div>
-  </div>
+  </SectionsPadding>
 </section>
 
 <style>

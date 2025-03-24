@@ -1,5 +1,6 @@
 ---
 import { homepage } from "../../../public/data/english.json";
+import SectionsPadding from "../body/SectionsPadding.astro";
 
 import { ButtonCTA } from "../button/button";
 // import Title from "../text/title.astro";
@@ -9,14 +10,16 @@ const approachSection = homepage.approachSection;
 ---
 
 <section class="py-8 bg-gray-50" id="my-approach">
-  <div class="container mx-auto flex flex-col items-center justify-center">
-    <!-- <Title>
+  <SectionsPadding>
+    <div class="flex flex-col items-center justify-center">
+      <!-- <Title>
       {approachSection.title}
     </Title> -->
-    <ApproachSectionBody
-      description={approachSection.description}
-      client:load
-    />
-    <ButtonCTA label={approachSection.cta} />
-  </div>
+      <ApproachSectionBody
+        description={approachSection.description}
+        client:load
+      />
+      <ButtonCTA label={approachSection.cta} />
+    </div>
+  </SectionsPadding>
 </section>

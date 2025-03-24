@@ -1,5 +1,6 @@
 ---
 import { homepage } from "../../../public/data/english.json";
+import SectionsPadding from "../body/SectionsPadding.astro";
 import MyJourney from "./about_section_data";
 
 const { aboutSection } = homepage;
@@ -7,22 +8,24 @@ const myJourneySection = homepage.myJourneySection;
 ---
 
 <section id="journey" class="py-8 bg-gray-50">
-  <div class="container mx-auto flex items-center justify-center flex-col">
-    {/* Mobile Card (Hidden on Larger Screens) */}
-    <div
-      class="md:hidden w-full p-6 bg-white/70 backdrop-blur-md rounded-lg shadow-lg mb-4"
-    >
-      <MyJourney client:load myJourneySection={myJourneySection} />
-    </div>
+  <SectionsPadding>
+    <div class="flex items-center justify-center flex-col">
+      {/* Mobile Card (Hidden on Larger Screens) */}
+      <div
+        class="md:hidden w-full p-6 bg-white/70 backdrop-blur-md rounded-lg shadow-lg mb-4"
+      >
+        <MyJourney client:load myJourneySection={myJourneySection} />
+      </div>
 
-    {/* Desktop Layout (Hidden on Smaller Screens) */}
-    <div class="hidden md:flex items-center justify-center flex-row w-full">
-      <img
-        src={aboutSection.imagePath}
-        alt={aboutSection.title}
-        class="w-xl rounded-3xl mr-8"
-      />
-      <MyJourney client:load myJourneySection={myJourneySection} />
+      {/* Desktop Layout (Hidden on Smaller Screens) */}
+      <div class="hidden md:flex items-center justify-center flex-row w-full">
+        <img
+          src={aboutSection.imagePath}
+          alt={aboutSection.title}
+          class="w-xl rounded-3xl mr-8"
+        />
+        <MyJourney client:load myJourneySection={myJourneySection} />
+      </div>
     </div>
-  </div>
+  </SectionsPadding>
 </section>
