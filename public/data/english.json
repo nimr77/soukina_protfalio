@@ -116,7 +116,7 @@
           "description": "Designing custom marketing strategies that align with business goals and target audiences, ensuring measurable growth via an executive marketing plan.",
           "icon": "fa-chess",
           "keywords": "marketing plan, strategy, target audience",
-          "color": "rgb(75, 107, 175)"
+          "color": "#DC3544"
         },
         {
           "id": "growth",
@@ -124,7 +124,7 @@
           "description": "Implementing data-driven growth marketing strategies to scale business performance, optimize acquisition channels, and maximize ROI.",
           "icon": "fa-chart-line",
           "keywords": "growth hacking, performance optimization, data-driven",
-          "color": "rgb(46, 204, 113)"
+          "color": "#DC3544"
         },
         {
           "id": "leadgen",
@@ -132,7 +132,7 @@
           "description": "Developing high-conversion lead generation and optimizing conversion funnels to turn prospects into customers at the lowest cost possible.",
           "icon": "fa-funnel-dollar",
           "keywords": "lead generation, conversion optimization, sales funnel",
-          "color": "rgb(241, 196, 15)"
+          "color": "#DC3544"
         },
         {
           "id": "seo",
@@ -140,7 +140,7 @@
           "description": "Boosting organic traffic with on-page SEO, technical SEO, and content strategy tailored for high search rankings and increased conversions.",
           "icon": "fa-search",
           "keywords": "seo, organic traffic, technical seo",
-          "color": "rgb(52, 152, 219)"
+          "color": "#DC3544"
         },
         {
           "id": "advertising",
@@ -148,7 +148,7 @@
           "description": "Crafting and managing targeted online advertising campaigns across platforms like Google Ads, Meta Ads, and LinkedIn Ads, optimizing for maximum ROI.",
           "icon": "fa-ad",
           "keywords": "paid advertising, campaign management, digital ads",
-          "color": "rgb(231, 76, 60)"
+          "color": "#DC3544"
         },
         {
           "id": "social",
@@ -156,7 +156,7 @@
           "description": "Building a strong social media strategy with a focus on brand awareness, audience engagement, and driving website traffic through targeted content and campaigns.",
           "icon": "fa-share-nodes",
           "keywords": "social media, engagement, content strategy",
-          "color": "rgb(155, 89, 182)"
+          "color": "#DC3544"
         }
       ]
     },
