@@ -103,8 +103,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
             <GhostText 
               text={heroSection.title} 
               className="text-xl md:text-xl font-bold text-white mb-4 leading-tigh text-start"           
-              duration={10}
-              wordDelay={0.1}
+    
               blurRadius={100}
               fontSize={300}
               sequential={true}

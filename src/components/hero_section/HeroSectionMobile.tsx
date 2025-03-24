@@ -81,8 +81,7 @@ const HeroSectionMobile: React.FC<HeroSectionMobileProps> = ({ title, descriptio
                 <GhostText
                     text={title}
                     className="text-2xl font-bold text-white mb-4 leading-tight block"
-                    duration={4}
-                    wordDelay={0.1}
+              
                     blurRadius={100}
                     fontSize={200}
                     sequential={true}
