@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import ServiceCard from "./service";
+import ServiceCard from './ServiceCard';
 
 interface Service {
   id: string;
