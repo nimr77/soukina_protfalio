@@ -14,10 +14,6 @@
     },
     "navigation": [
       {
-        "label": "Work",
-        "sectionId": "work"
-      },
-      {
         "label": "My Approach",
         "sectionId": "my-approach"
       },
@@ -38,21 +34,18 @@
     "socialLinks": [
       {
         "platform": "linkedin",
-        "url": "http://soukainamehdi"
+        "url": "https://linkedin.com/in/soukainamehdi"
       }
     ]
   },
 
   "homepage": {
-    "approachSection": {
-      "title": "My Approach",
-      "description": "Digital marketing is the backbone of business growth, but without a clear **strategy**, **performance analysis**, and **creativity**, businesses risk high costs and low conversions. As a digital marketing consultant, I believe in **data-driven decision-making** and structured **marketing plans** to create a roadmap for success, ensuring every campaign is optimized for **maximum ROI**. My approach is centered around understanding each business *unique* challenges and goals, then leveraging my expertise to develop a *tailored marketing strategy* that will address its specific needs. From optimizing your *marketing funnel* to **low ad cost** and **more conversions**. My mission is to provide guidance every step of the way.",
-      "keywords": "data-driven, marketing funnel, brand awareness, personalized strategy",
-      "cta": "Let's Build a Winning Strategy!"
-    },
-    "myJourneySection": {
-      "title": "My Journey",
-      "description": "I believe in the power of data to drive informed decision-making and fuel business growth. My approach is centered around understanding your unique challenges and goals, then leveraging my expertise to develop tailored strategies that address your specific needs. From optimizing your marketing funnel to refining your brand messaging, I’m here to guide you every step of the way.",
+    "myApprouchSection": {
+      "title": "Nice to meet you!",
+      "imagePath": "images/soukainamehdi_115.jpg",
+      "subtitle": "I'm Soukaina Mehdi and I am a Digital Marketing Consultant.",
+      "description": "I think you know that digital marketing is the backbone of business growth, but without a **clear strategy**, **performance analysis**, and **creativity**, businesses risk **high costs** and **low conversions**.\n\nAs a digital marketing consultant, I believe in **data-driven decision-making** and **structured marketing plans** to create a roadmap for success, ensuring every campaign is optimized for **maximum ROI**.\n\nMy approach is centered around understanding each business **unique challenges** and goals, then leveraging my expertise to develop a **tailored marketing strategy** that will address its specific needs. From optimizing your marketing funnel to **low ad cost** and **more conversions**. My mission is to provide guidance every step of the way.",
+      "cta": "Let's Build a Winning Strategy!",
       "qualifications": {
         "column1": [
           {
@@ -87,7 +80,7 @@
     "heroSection": {
       "imagePath": "images/Su file.png",
       "title": "Digital Marketing & Business Growth Consultant",
-      "description": "I design **result-driven marketing strategies** that turn traffic into revenue,drive more leads & sales, and **maximize ROI** with Performance optimization.",
+      "description": "I design **result-driven marketing strategies** that turn traffic into revenue, drive more leads & sales, and **maximize ROI** with Performance optimization.",
       "button": {
         "label": "Book a Free Consultation",
         "link": "/contact"
@@ -203,11 +196,11 @@
     "socialLinks": [
       {
         "platform": "instagram",
-        "url": "http://sukenamediinstg"
+        "url": "https://instagram.com/sukenamedi"
       },
       {
         "platform": "linkedin",
-        "url": "http://soukainamehdi"
+        "url": "https://linkedin.com/in/soukainamehdi"
       }
     ]
   }

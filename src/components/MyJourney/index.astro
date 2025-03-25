@@ -1,20 +1,25 @@
 ---
 import { homepage } from "../../../public/data/english.json";
 import SectionsPadding from "../body/SectionsPadding.astro";
-import MyJourney from "./about_section_data";
+import { ButtonCTA } from "../button/button";
+import AnimatedTitle from "../text/animatedTitle";
+import ApproachSectionBody from "./text";
 
 const { aboutSection } = homepage;
-const myJourneySection = homepage.myJourneySection;
+const myApprouchSection = homepage.myApprouchSection;
 ---
 
-<section id="journey" class="py-8 bg-gray-50">
+<section id="my-approach" class="py-8 bg-gray-50">
   <SectionsPadding>
     <div class="flex items-center justify-center flex-col">
       {/* Mobile Card (Hidden on Larger Screens) */}
       <div
         class="md:hidden w-full p-6 bg-white/70 backdrop-blur-md rounded-lg shadow-lg mb-4"
       >
-        <MyJourney client:load myJourneySection={myJourneySection} />
+        <ApproachSectionBody
+          client:load
+          description={myApprouchSection.description}
+        />
       </div>
 
       {/* Desktop Layout (Hidden on Smaller Screens) */}
@@ -24,7 +29,20 @@ const myJourneySection = homepage.myJourneySection;
           alt={aboutSection.title}
           class="w-xl rounded-3xl mr-8"
         />
-        <MyJourney client:load myJourneySection={myJourneySection} />
+        <div class="flex flex-col items-start justify-center">
+          <AnimatedTitle title={myApprouchSection.title} client:load />
+          <ApproachSectionBody
+            client:load
+            description={myApprouchSection.subtitle}
+          />
+          <div class="w-full h-0.5 bg-gray-200 my-4"></div>
+          <ApproachSectionBody
+            client:load
+            description={myApprouchSection.description}
+          />
+          <div class="my-5"></div>
+          <ButtonCTA label={myApprouchSection.cta} />
+        </div>
       </div>
     </div>
   </SectionsPadding>
