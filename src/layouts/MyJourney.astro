@@ -1,9 +1,9 @@
 ---
-import { homepage } from "../../../public/data/english.json";
-import SectionsPadding from "../body/SectionsPadding.astro";
-import { ButtonCTA } from "../button/button";
-import AnimatedTitle from "../text/animatedTitle";
-import ApproachSectionBody from "./text";
+import { homepage } from "@/public/data/english.json";
+import SectionsPadding from "../components/body/SectionsPadding.astro";
+import { ButtonCTA } from "../components/button/button";
+import ApproachSectionBody from "../components/MyJourney/text";
+import AnimatedTitle from "../components/text/animatedTitle";
 
 const { aboutSection } = homepage;
 const myApprouchSection = homepage.myApprouchSection;
@@ -14,7 +14,7 @@ const myApprouchSection = homepage.myApprouchSection;
     <div class="flex items-center justify-center flex-col">
       {/* Mobile Card (Hidden on Larger Screens) */}
       <div
-        class="md:hidden w-full p-6 bg-white/70 backdrop-blur-md rounded-lg shadow-lg mb-4"
+        class="md:hidden w-full bg-white/70 backdrop-blur-md rounded-lg shadow-lg mb-4"
       >
         <ApproachSectionBody
           client:load
@@ -23,7 +23,7 @@ const myApprouchSection = homepage.myApprouchSection;
       </div>
 
       {/* Desktop Layout (Hidden on Smaller Screens) */}
-      <div class="hidden md:flex items-center justify-center flex-row w-full">
+      <div class="hidden md:flex flex-row w-full">
         <img
           src={aboutSection.imagePath}
           alt={aboutSection.title}

@@ -1,5 +1,6 @@
 ---
 import { header } from "../../public/data/english.json";
+import SectionsPadding from "../components/body/SectionsPadding.astro";
 import "../styles/global.css";
 
 const { logo, navigation, socialLinks } = header;
@@ -173,7 +174,6 @@ const { logo, navigation, socialLinks } = header;
       animation: slide-down 0.3s ease forwards;
     }
   </style>
-
     <slot />
   </body>
 </html>

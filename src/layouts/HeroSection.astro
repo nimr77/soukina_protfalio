@@ -1,0 +1,15 @@
+---
+import { homepage } from "../../public/data/english.json";
+import SectionsPadding from "../components/body/SectionsPadding.astro";
+import HeroSectionComponant from "../components/hero_section/HeroSection";
+const { heroSection } = homepage;
+---
+
+<section
+  id="about"
+  class="relative h-screen flex items-center justify-start bg-cover bg-center"
+>
+  <SectionsPadding>
+    <HeroSectionComponant client:load heroSection={heroSection} />
+  </SectionsPadding>
+</section>

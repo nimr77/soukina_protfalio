@@ -1,23 +1,22 @@
 ---
-import { homepage } from "../../../public/data/english.json";
-import SectionsPadding from "../body/SectionsPadding.astro";
+import { homepage } from "@/public/data/english.json";
+import SectionsPadding from "../components/body/SectionsPadding.astro";
 
 const { workedWith } = homepage;
 ---
 
 <section id="work" class="py-12 bg-gray-50">
-  <SectionsPadding>
-    <!-- <Title>
+  <!-- <Title>
       {workedWith.title}
     </Title>
     <p class="text-gray-700 text-lg text-center mb-8">
       {workedWith.description}
     </p> -->
-
+  <SectionsPadding>
     {/* Responsive Company Logos */}
     <div class="scrollbar-hide">
       <div
-        class="flex items-center justify-start md:justify-center space-x-4 md:space-x-8 py-6 px-4 md:px-0"
+        class="flex items-center justify-start md:justify-center space-x-4 md:space-x-8 py-6"
       >
         {
           workedWith.companies.map((company, index) => (

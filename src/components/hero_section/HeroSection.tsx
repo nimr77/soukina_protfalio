@@ -64,14 +64,12 @@ const buttonVariants = {
   }
 };
 
-const HeroSection: React.FC<Props> = ({ heroSection }) => {
+const HeroSectionComponant: React.FC<Props> = ({ heroSection }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 }); 
   return (
-    <section
-      id="about"
-      className="relative h-screen flex items-center justify-start bg-cover bg-center"
-      // style={{ backgroundImage: `url('${heroSection.imagePath}')` }}
-    >
+    <>
+
+       
       {isMobile ? (
         // Render the mobile component
         <HeroSectionMobile
@@ -89,7 +87,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
           />
           <div className="absolute inset-0 bg-black opacity-10"></div>
           <motion.div
-            className="container text-left relative z-10 px-8 md:px-60 max-w-7xl"
+            className="container text-left relative z-10 max-w-7xl"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -124,6 +122,7 @@ const HeroSection: React.FC<Props> = ({ heroSection }) => {
           </motion.div>
         </>
       )}
-    </section>
+    </>
+
   );
-};export default HeroSection;
+};export default HeroSectionComponant;

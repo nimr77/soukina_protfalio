@@ -1,22 +1,18 @@
 ---
-import HeroSection from "../components/hero_section/HeroSection";
-import MyApprouch from "../components/MyApproach/index.astro";
-import MyJourney from "../components/MyJourney/index.astro";
-import ServicesSection from "../components/services/index.astro";
-import WorkedWith from "../components/workedWith/index.astro";
 import Layout from "../layouts/Layout.astro";
 
-import { homepage } from "../../public/data/english.json";
-
-const { heroSection } = homepage;
+import HeroSection from "../layouts/HeroSection.astro";
+import MyJourney from "../layouts/MyJourney.astro";
+import ServicesSection from "../layouts/ServicesSection.astro";
+import WorkedWith from "../layouts/WorkedWith.astro";
 ---
 
 <Layout class="font-poppins">
-  <HeroSection client:load heroSection={heroSection} />
+  <HeroSection />
   <WorkedWith />
   <MyJourney />
 
-  <MyApprouch />
+  <!-- <MyApprouch /> -->
   <!-- <ApproachSection /> -->
   <ServicesSection />
   <!-- <ROISection /> -->

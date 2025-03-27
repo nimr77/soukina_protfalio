@@ -13,7 +13,7 @@ const ApproachSectionBody: React.FC<ApproachSectionProps> = ({ description }) =>
   return (
     <motion.div
       ref={ref}
-      className="max-w-screen-md px-4 md:px-0"  // Added responsive padding
+      className="max-w-screen-md "  // Added responsive padding
       initial={{ opacity: 0, x: -30 }}
       animate={isInView ? { opacity: 1, x: 0, transition: { duration: 1, ease: "easeInOut" } } : { opacity: 0, x: -30 }}
     >
