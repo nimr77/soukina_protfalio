@@ -60,20 +60,17 @@ const buttonVariants = {
 
 const HeroSectionMobile: React.FC<HeroSectionMobileProps> = ({ title, description, button, imagePath }) => {
     return (
-        <div className="relative w-full h-full flex items-center justify-center">
+        <div className=" flex items-center justify-center overflow-x-hidden"> 
             {/* Background Image (Centered and Big) */}
             <img
                 src={imagePath}
                 alt="Hero Background"
-                className="absolute inset-0 object-cover -z-10 w-full h-full object-center"
+                className="absolute inset-0 object-cover -z-10 w-full h-full object-center"  
             />
-
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black opacity-40"></div>
 
             {/* Mobile Card */}
             <motion.div
-                className="p-6 rounded-lg bg-black/50 backdrop-blur-lg shadow-lg text-center w-full max-w-md mt-48"
+                className="p-6 rounded-lg bg-black/50 backdrop-blur-lg shadow-lg object-center text-center w-full max-w-md mt-48 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -81,7 +78,6 @@ const HeroSectionMobile: React.FC<HeroSectionMobileProps> = ({ title, descriptio
                 <GhostText
                     text={title}
                     className="text-2xl font-bold text-white mb-4 leading-tight block"
-              
                     blurRadius={100}
                     fontSize={200}
                     sequential={true}

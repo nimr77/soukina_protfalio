@@ -43,7 +43,7 @@ export function GhostText({
           style={{
             ["--blur-color" as string]: "rgb(var(--text-color))",
           }}
-          className="mx-1 inline-block text-transparent [--text-color:15_23_42] dark:[--text-color:255_255_255]"
+          className="inline-block text-transparent [--text-color:15_23_42] dark:[--text-color:255_255_255] me-2"
           initial={{ opacity: 0, textShadow: `0 0 ${blurRadius}px ${blurColor || "var(--blur-color)"}` }}
           animate={{
             opacity: 1,
