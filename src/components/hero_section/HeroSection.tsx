@@ -87,9 +87,8 @@ const HeroSectionComponant: React.FC<Props> = ({ heroSection }) => {
           />
           <div className="absolute inset-0 bg-black opacity-10"></div>
           <motion.div
-            className="container text-left relative z-10 max-w-7xl"
-            variants={containerVariants}
-            initial="hidden"
+            className="container text-left relative z-10 max-w-[900px] py-16 px-4 md:px-8 lg:px-12"
+            variants={containerVariants}            initial="hidden"
             animate="visible"
           >
             {/* <motion.h1
