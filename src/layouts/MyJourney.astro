@@ -2,15 +2,25 @@
 import data from "@/public/data/english.json";
 import SectionsPadding from "../components/body/SectionsPadding.astro";
 import AnimatedTitle from "../components/text/animatedTitle";
+import Timeline from "../components/TimeLine/timeLine";
 
 const { myJourney } = data.homepage;
 ---
 
-<section
-  id="my-journey"
-  class="relative h-screen flex items-center justify-start bg-cover bg-center"
->
+<section id="my-journey" class="dark:bg-neutral-950">
   <SectionsPadding>
-    <AnimatedTitle title={myJourney.title} client:load />
+    <AnimatedTitle
+      title={myJourney.title}
+      className="text-white "
+      client:load
+    />
+    <div class="pb-12"></div>
+    <Timeline
+      data={myJourney.timeline.map((item) => ({
+        title: item.year.toString(),
+        content: item.text,
+      }))}
+      client:visible
+    />
   </SectionsPadding>
 </section>

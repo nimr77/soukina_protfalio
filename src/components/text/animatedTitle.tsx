@@ -16,14 +16,15 @@ const itemVariants = {
 
 export default function AnimatedTitle({
   title,
+  className,
 }: {
   title: string;
+  className?: string;
 }) {
   return (
   <motion.h2
-          className="text-5xl text-gray-700 font-bold text-center"
-          variants={itemVariants}
-          initial="hidden"
+          className={`text-5xl text-gray-700 font-bold text-center ${className}`}
+          variants={itemVariants}          initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
