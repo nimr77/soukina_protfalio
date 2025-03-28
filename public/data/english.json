@@ -189,6 +189,35 @@
           "type": "png"
         }
       ]
+    },
+    "myJourney": {
+      "title": "9 years experience to “Digital Marketing Consultant”!",
+      "timeline": [
+        {
+          "year": 2016,
+          "text": "Back in late 2016, I stepped into the world of digital marketing"
+        },
+        {
+          "year": 2019,
+          "text": "SEO WellBeing"
+        },
+        {
+          "year": 2021,
+          "text": "Mobile Marketing in Food Tech / Medical Tourism"
+        },
+        {
+          "year": 2022,
+          "text": "Big International Agency Publicis Groupe"
+        },
+        {
+          "year": 2023,
+          "text": "Luxury Brand and International Marketing / International Agency"
+        },
+        {
+          "year": 2025,
+          "text": "Now in 2025 the vision is bigger"
+        }
+      ]
     }
   },
   "footer": {

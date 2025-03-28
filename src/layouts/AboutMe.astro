@@ -1,0 +1,50 @@
+---
+import { homepage } from "@/public/data/english.json";
+import SectionsPadding from "../components/body/SectionsPadding.astro";
+import { ButtonCTA } from "../components/button/button";
+import ApproachSectionBody from "../components/MyJourney/text";
+import AnimatedTitle from "../components/text/animatedTitle";
+
+const { aboutSection } = homepage;
+const myApprouchSection = homepage.myApprouchSection;
+---
+
+<section id="my-approach" class="bg-gray-50">
+  <SectionsPadding>
+    <div class="flex items-center justify-center flex-col">
+      {/* Mobile Card (Hidden on Larger Screens) */}
+      <div
+        class="md:hidden w-full bg-white/70 backdrop-blur-md rounded-lg shadow-lg mb-4"
+      >
+        <ApproachSectionBody
+          client:load
+          description={myApprouchSection.description}
+        />
+      </div>
+
+      {/* Desktop Layout (Hidden on Smaller Screens) */}
+      <div class="hidden md:flex flex-row w-full">
+        <img
+          src={aboutSection.imagePath}
+          alt={aboutSection.title}
+          class="w-xl rounded-3xl me-8"
+        />
+        <div class="flex flex-col items-start justify-center">
+          <AnimatedTitle title={myApprouchSection.title} client:load />
+          <dev class="pt-4"></dev>
+          <ApproachSectionBody
+            client:load
+            description={myApprouchSection.subtitle}
+          />
+          <div class="w-full h-0.5 bg-gray-200 my-4"></div>
+          <ApproachSectionBody
+            client:load
+            description={myApprouchSection.description}
+          />
+          <div class="my-5"></div>
+          <ButtonCTA label={myApprouchSection.cta} />
+        </div>
+      </div>
+    </div>
+  </SectionsPadding>
+</section>
