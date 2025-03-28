@@ -21,7 +21,7 @@ export default function AnimatedTitle({
 }) {
   return (
   <motion.h2
-          className="text-5xl text-gray-700 font-bold text-center mb-4"
+          className="text-5xl text-gray-700 font-bold text-center"
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
