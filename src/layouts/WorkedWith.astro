@@ -5,7 +5,7 @@ import SectionsPadding from "../components/body/SectionsPadding.astro";
 const { workedWith } = homepage;
 ---
 
-<section id="work" class="py-12 bg-gray-50">
+<section id="work" class="bg-gray-50 pt-8">
   <!-- <Title>
       {workedWith.title}
     </Title>
@@ -15,16 +15,14 @@ const { workedWith } = homepage;
   <SectionsPadding>
     {/* Responsive Company Logos */}
     <div class="scrollbar-hide">
-      <div
-        class="flex items-center justify-start md:justify-center space-x-4 md:space-x-8 py-6"
-      >
+      <div class="flex justify-between overflow-x-auto">
         {
           workedWith.companies.map((company, index) => (
             <div id={index.toString()} class="company-item">
               <img
                 src={company.image}
                 alt={`Logo of ${company.name || "Company"}`}
-                class="h-16 md:h-24 w-auto object-contain grayscale-50 hover:grayscale-0 transition-all duration-300 hover:scale-110 rounded-lg"
+                class="h-14 md:h-24 w-auto object-contain grayscale-50 hover:grayscale-0 transition-all duration-300 hover:scale-110 rounded-lg"
               />
             </div>
           ))
